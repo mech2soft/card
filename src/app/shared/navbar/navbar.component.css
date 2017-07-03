@@ -8,30 +8,65 @@
 }
 
 .navbar-inverse .navbar-nav>li>a{
-    color: #222;
+  /*color: white;*/
+  color: #004985;
 }
-.dropdown:hover .dropdown-menu {
+
+.multi-column-dropdown
+{
+   margin-top: 10px !important; 
+}
+/*.dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0; 
     z-index: 10000; 
- }
+ }*/
 
 .navbar {
     /*-webkit-box-shadow: 6px 3px 5px 0px #999;
     -moz-box-shadow: 6px 3px 5px 0px #999;
     box-shadow: 5px 3px 5px 0px #999;*/
-    color: white;   
+    color: white; 
+    font-family:    "ProximaNovaSoft-Regular", Calibri,
+        "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI",
+         Arial, sans-serif;    
+}
+
+.navbar-static-top
+{
+  background-color: white;
 }
 
 .dropdown-menu .divider
-{
-  margin: 2px;
+{  
+ margin: 3px; 
 }
 
-.navbar-default
+.navbar-static-top
 {
-  border-top-color: red !important;
+  border: 1px solid #C9C9C9 !important;
 }
+
+.container-fluid
+{  
+  font-family: "ProximaNovaSoft-Regular", Calibri, "Gill Sans", "Gill Sans MT", Candara, Segoe, "Segoe UI", Arial, sans-serif;
+}
+
+.navbar-nav>li>.dropdown-menu
+{
+  -webkit-box-shadow: -5px -4px 5px 0px rgba(179,168,179,1);
+  -moz-box-shadow: -5px -4px 5px 0px rgba(179,168,179,1);
+  box-shadow: -5px -4px 5px 0px rgba(179,168,179,1);
+}
+
+.dropdown-menu.columns-3 {
+	min-width: 710px;
+}
+
+/*ul{
+  margin-top: 10px !important; 
+}*/
+
 .navbar-default .navbar-nav > li> a{
   font-size: 14px !important;
     line-height: 18px !important;
@@ -39,9 +74,10 @@
     padding-left: 20px !important;
     text-indent: 0px;
     padding-right: 20px !important;
-    font-family: Interstate_Light, sans-serif !important;
+    /*font-family: Interstate_Light, sans-serif !important;*/
     background-color: transparent;
     color: #004985;
+    text-transform: uppercase;
     /*font-family: NotoSans,Helvetica,Arial;
     font-weight: normal;
     font-size: 16px !important;*/
@@ -56,6 +92,41 @@
    pointer-events: none;
    cursor: default;
 }
+
+.row{
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.divider-right
+{
+   border-right: 1px solid #ABABAB !important;
+   line-height: 70px;
+   background-color: #C9C9C9;
+   color: black;
+
+   /*position: relative;
+   list-style-type: none;*/
+    /*position:absolute;
+    left:50%;
+    top:10%;
+    bottom:10%;
+    border-left:1px solid white;*/
+}
+
+.dropdown-menu
+{
+  padding: 0;
+}
+
+/*.divider-right:after
+{
+   position:absolute;
+    left:50%;
+    top:10%;
+    bottom:10%;
+    border-right:1px solid black;
+}*/
 /*.navbar-custom {
   background-color: #0088cc;
   border-color: #0072ab;
@@ -176,7 +247,7 @@ background-position: 5px 9px !important;
   }
 }
 .navbar-logo {
-  background-image: url('fleetcor.png');
+  /*background-image: url('1.png');*/
   width: 25px;
   height: 25px;
   background-size: cover;
@@ -186,4 +257,9 @@ background-position: 5px 9px !important;
   top: 60px;
   left: 10px;
   z-index: 1051;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 
+{   
+  padding-right: 0;
 }
